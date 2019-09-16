@@ -2,3 +2,15 @@ body{
     padding: 0;
     margin: 0;
 }
+
+header{
+    width:100%;
+}
+
+.logo{
+    width: 598px;
+    height: 181px;
+    margin-left: 421px;
+    margin-right: 181px;
+    margin-top: 15px;
+}
