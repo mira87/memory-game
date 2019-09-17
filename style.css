@@ -105,7 +105,28 @@ margin: 0 auto;
     overflow: hidden;
 }
 
+/***************CARD AREA**********************/
 
+.card-area{
+    width:730px ;
+    height:593px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 54px auto;
+    justify-content: space-between;
+}
+
+.card{
+    width: 133px;
+    height: 177px;
+    float: left;
+}
+
+
+
+.dd{
+    display:none;
+}
 /**********Modal***********/
 
 .modal{
