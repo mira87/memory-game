@@ -33,7 +33,7 @@ for(let i=0;i<cardbgHolder.length;i++){
 
 
 
-
+let numberOfClicks=0;
 
 
 
@@ -86,15 +86,21 @@ if(randomDeck===0){
 
         function click0(){
             cardbgHolder[0].src=choices[0][1];
+            numberOfClicks+=1;
             }
             function click1(){
                 cardbgHolder[1].src=choices[0][1];
+                numberOfClicks+=1
                 }
                 function click2(){
                     cardbgHolder[2].src=choices[1][1];
+                    numberOfClicks+=1
+
                     }
                     function click3(){
                         cardbgHolder[3].src=choices[1][1];
+                        numberOfClicks+=1
+
                         }
 
     }
@@ -103,15 +109,23 @@ if(randomDeck===0){
 
     function click0(){
         cardbgHolder[0].src=choices[1][1];
+        numberOfClicks+=1
+
         }
         function click1(){
             cardbgHolder[1].src=choices[0][1];
+            numberOfClicks+=1
+
             }
             function click2(){
                 cardbgHolder[2].src=choices[1][1];
+                numberOfClicks+=1
+
                 }
                 function click3(){
                     cardbgHolder[3].src=choices[0][1];
+                    numberOfClicks+=1
+
                     }
 
    }
@@ -122,15 +136,23 @@ if(randomDeck===0){
 
     function click0(){
         cardbgHolder[0].src=choices[0][1];
+        numberOfClicks+=1
+
         }
         function click1(){
             cardbgHolder[1].src=choices[1][1];
+            numberOfClicks+=1
+
             }
             function click2(){
                 cardbgHolder[2].src=choices[0][1];
+                numberOfClicks+=1
+
                 }
                 function click3(){
                     cardbgHolder[3].src=choices[1][1];
+                    numberOfClicks+=1
+
                     }
 
    }
@@ -140,15 +162,23 @@ if(randomDeck===0){
 
     function click0(){
         cardbgHolder[0].src=choices[1][1];
+        numberOfClicks+=1
+
         }
         function click1(){
             cardbgHolder[1].src=choices[1][1];
+            numberOfClicks+=1
+
             }
             function click2(){
                 cardbgHolder[2].src=choices[0][1];
+                numberOfClicks+=1
+
                 }
                 function click3(){
                     cardbgHolder[3].src=choices[0][1];
+                    numberOfClicks+=1
+
                     }
 
    }
@@ -163,15 +193,31 @@ if (randomly===0){
   
     function click0(){
         cardbgHolder[0].src=choices[0][1];
+        numberOfClicks+=1
+        console.log(numberOfClicks);
+
+
         }
         function click1(){
             cardbgHolder[1].src=choices[0][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click2(){
                 cardbgHolder[2].src=choices[1][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
                 function click3(){
                     cardbgHolder[3].src=choices[1][1];
+                    numberOfClicks+=1
+                    console.log(numberOfClicks);
+
+
                     }
 
 }
@@ -180,15 +226,31 @@ else if(randomly===1){
 
 function click0(){
     cardbgHolder[0].src=choices[1][1];
+    numberOfClicks+=1
+    console.log(numberOfClicks);
+
+
     }
     function click1(){
         cardbgHolder[1].src=choices[0][1];
+        numberOfClicks+=1
+        console.log(numberOfClicks);
+
+
         }
         function click2(){
             cardbgHolder[2].src=choices[1][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click3(){
                 cardbgHolder[3].src=choices[0][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
 
 }
@@ -199,15 +261,31 @@ else if(randomly===2){
 
 function click0(){
     cardbgHolder[0].src=choices[0][1];
+    numberOfClicks+=1
+    console.log(numberOfClicks);
+
+
     }
     function click1(){
         cardbgHolder[1].src=choices[1][1];
+        numberOfClicks+=1
+        console.log(numberOfClicks);
+
+
         }
         function click2(){
             cardbgHolder[2].src=choices[0][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click3(){
                 cardbgHolder[3].src=choices[1][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
 
 }
@@ -217,15 +295,31 @@ else if(randomly===3){
 
 function click0(){
     cardbgHolder[0].src=choices[1][1];
+    numberOfClicks+=1
+    console.log(numberOfClicks);
+
+
     }
     function click1(){
         cardbgHolder[1].src=choices[1][1];
+        numberOfClicks+=1
+        console.log(numberOfClicks);
+
+
         }
         function click2(){
             cardbgHolder[2].src=choices[0][1];
-            }
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+        }
+
             function click3(){
                 cardbgHolder[3].src=choices[0][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
 
 }
@@ -239,15 +333,31 @@ else if(randomDeck===2){
    
         function click0(){
             cardbgHolder[0].src=choices[0][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click1(){
                 cardbgHolder[1].src=choices[0][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
                 function click2(){
                     cardbgHolder[2].src=choices[1][1];
+                    numberOfClicks+=1
+                    console.log(numberOfClicks);
+
+
                     }
                     function click3(){
                         cardbgHolder[3].src=choices[1][1];
+                        numberOfClicks+=1
+                        console.log(numberOfClicks);
+
+
                         }
 
     }
@@ -259,15 +369,31 @@ else if(randomDeck===2){
 
     function click0(){
         cardbgHolder[0].src=choices[1][1];
+        numberOfClicks+=1;
+        console.log(numberOfClicks);
+
+
         }
         function click1(){
             cardbgHolder[1].src=choices[0][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click2(){
                 cardbgHolder[2].src=choices[1][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
                 function click3(){
                     cardbgHolder[3].src=choices[0][1];
+                    numberOfClicks+=1
+                    console.log(numberOfClicks);
+
+
                     }
 
    }
@@ -278,15 +404,31 @@ else if(randomDeck===2){
 
     function click0(){
         cardbgHolder[0].src=choices[0][1];
+        numberOfClicks+=1
+        console.log(numberOfClicks);
+
+
         }
         function click1(){
             cardbgHolder[1].src=choices[1][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click2(){
                 cardbgHolder[2].src=choices[0][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
                 function click3(){
                     cardbgHolder[3].src=choices[1][1];
+                    numberOfClicks+=1
+                    console.log(numberOfClicks);
+
+
                     }
 
    }
@@ -297,15 +439,31 @@ else if(randomDeck===2){
   
    function click0(){
     cardbgHolder[0].src=choices[1][1];
+    numberOfClicks+=1
+    console.log(numberOfClicks);
+
+
     }
     function click1(){
         cardbgHolder[1].src=choices[1][1];
+        numberOfClicks+=1
+        console.log(numberOfClicks);
+
+
         }
         function click2(){
             cardbgHolder[2].src=choices[0][1];
+            numberOfClicks+=1
+            console.log(numberOfClicks);
+
+
             }
             function click3(){
                 cardbgHolder[3].src=choices[0][1];
+                numberOfClicks+=1
+                console.log(numberOfClicks);
+
+
                 }
             }
    
@@ -324,13 +482,13 @@ else if(randomDeck===2){
 
 
 
-//only 2 pairs matching
+//only 2 pairs matchingconsole.log(numberOfClicks);
+
 
 console.log(choices[i][i])
 }
 
 // }
-
 
 cardbg1.addEventListener('click',click0)
 cardbg2.addEventListener('click',click1)
