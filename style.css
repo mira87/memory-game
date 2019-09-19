@@ -90,6 +90,12 @@ margin: 0 auto;
 
 }
 
+.score,.timer,.start{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+font-size: 60px}
+
 
 
 
@@ -122,11 +128,37 @@ margin: 0 auto;
     float: left;
 }
 
-
-
-.dd{
-    display:none;
+.faceCard{
+    width: 133px;
+    height: 177px;
+    float: left;
 }
+
+
+.dino{
+    background-image: url(img/jcg_dino_red@3x.png);
+    width: 133px;
+    height: 177px;
+    float: left;
+    background-position: center;
+    background-size: contain;
+    display:block;
+
+}
+
+.geisha{
+    background-image: url("img/jcg_geisha_red@3x.png");
+    width: 133px;
+    height: 177px;
+    float: left;
+    background-position: center;
+    background-size: contain;
+    display:block;
+}
+
+/* .faceCard{
+    display:none;
+} */
 /**********Modal***********/
 
 .modal{
@@ -135,7 +167,6 @@ margin: 0 auto;
     width: 100%;
     margin: 0;
     padding-top:155px ;
-    display: none;
     
 }
 h1{
@@ -154,6 +185,7 @@ h1{
     line-height: 21px;
     padding: 20px;
     overflow: auto;
+    text-align: center;
 
 }
 
@@ -184,6 +216,23 @@ h1{
     margin-right: 28px;
 }
 
+
+
+.begin{
+    height: 60px;
+    border-radius: 4px;
+    background-color: #ffc63e;
+    /* background-size: cover; */
+    font-family: Arial;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    /* line-height: 23px; */
+    text-align: center;
+    box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
+    margin: auto;
+    display: block;
+}
 
 
 /*************FOOTER********************/
