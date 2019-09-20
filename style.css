@@ -342,3 +342,20 @@ footer img{
     width: 70px;
     height: 34px;
 }
+
+
+
+/*****MEDIA QUERIES********/
+
+@media(max-width:360px){
+
+
+    .logo{
+        width: 200px;
+        /* margin-left: 421px; */
+        /* margin-right: 181px; */
+       
+        margin: 0;
+        display: block;
+    }
+    }
