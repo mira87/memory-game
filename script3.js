@@ -16,10 +16,9 @@ function lightsOff(){
 night.addEventListener('click',lightsOff)
 //////////////////////////////
 //SOCRE
+let scoreNum=0;
 
 let score=document.querySelector('.score');
-score.innerHTML=0;
-
 
 
 
@@ -45,9 +44,15 @@ begin.addEventListener('click',modalLeave);
 
 let numberOfClicks=0;
 let clickedCards=[["a","b"],["a","b"]]
+let clickedFirst;
+let clickedSecond;
 
 //CREATE BOARD//////
 /////Current Deck
+function createBoard(){
+
+
+}
 let currentCardDeck=[];
     for(let i=0;i<4;i++){
 
@@ -62,6 +67,23 @@ let currentCardDeck=[];
 
 
 ////
+
+function pickACard(e){
+    numberOfClicks++
+    if (numberOfClicks%2===1&numberOfClicks!==0){
+        clickedFirst=e.target
+    }
+
+
+    console.log('Picked')
+
+
+}
+
+
+
+
+
 let board=document.querySelector('.card-area')
 
 let cardCount=4;
@@ -73,9 +95,11 @@ for (let i=0;i<cardCount;i++){
     bgCard.src="img/jcg_bg_red@3x.png";
     board.appendChild(bgCard);
 
-
+bgCard.addEventListener('click',pickACard)
 
 }
+
+
 
 ////Board Created/////
 
@@ -126,19 +150,30 @@ for (let i=0;i<4;i++){
             console.log(numberOfClicks)
         
             if(numberOfClicks===1){
-                e.target.src=currentCardDeck[0].src;
+                e.target.style.display="none"
+                currentCardDeck[0].style.display="block"
+                // e.target.src=currentCardDeck[0].src;
             
             }
             else if(numberOfClicks===2){
-                e.target.src=currentCardDeck[1].src;
+                e.target.style.display="none"
+                currentCardDeck[1].style.display="block"
+
+                // e.target.src=currentCardDeck[1].src;
             
             }
             else if(numberOfClicks===3){
-                e.target.src=currentCardDeck[2].src;
+                e.target.style.display="none"
+                currentCardDeck[2].style.display="block"
+
+                // e.target.src=currentCardDeck[2].src;
             
             }
             else if(numberOfClicks===4){
-                e.target.src=currentCardDeck[3].src;
+                e.target.style.display="none"
+                currentCardDeck[3].style.display="block"
+
+                // e.target.src=currentCardDeck[3].src;
             
             }
             
@@ -178,6 +213,11 @@ for (let i=0;i<4;i++){
                 clickedCards[0][0].classList.add('matched')
                 clickedCards[0][1].classList.add('matched')
 
+
+                scoreNum+=1;
+                score.innerText=scoreNum
+
+
             }
             else if((clickedCards[1][0].name===clickedCards[1][1].name)&&(numberOfClicks!==0 && numberOfClicks===4)){
                 console.log('Match')
@@ -187,14 +227,20 @@ for (let i=0;i<4;i++){
                 clickedCards[1][1].classList.add('matched')
 
 
+                scoreNum+=1;
+                score.innerText=scoreNum
+
+
+
             }
 
             else if((clickedCards[1][0].name===clickedCards[1][1].name)&&(numberOfClicks!==0 &&numberOfClicks%2===0)){
                 function wrong(){
                         console.log("wrong")
                         for(let i=0;i<2;i++){
-                            e.target.src=bgCard.src;
-                            numberOfClicks-=1;
+
+                            this.style.display="none"
+                            bgCard.style.display="block"                        
                         }
                        
                 }
@@ -205,26 +251,61 @@ for (let i=0;i<4;i++){
 
             }
         /////////////
-        
+            if (clickedCards[0][0].classList.contains('matched')&&clickedCards[0][1].classList.contains('matched')&&clickedCards[1][0].classList.contains('matched')&&clickedCards[1][1].classList.contains('matched')&& numberOfClicks>0){
+
+                // scoreNum+=1;
+                // score.innerText=scoreNum
+
+
+                shuffleDeck(currentCardDeck);
+                currentCardDeck[0].style.display="none";
+                currentCardDeck[1].style.display="none";
+                currentCardDeck[2].style.display="none";
+                currentCardDeck[3].style.display="none";
+
+                numberOfClicks=0;
+
+                for(let i=0;i<currentCardDeck;i++){
+                    bgCard[i].style.display="block"
+                }
+
+            
+            // numberOfClicks=0;
+            // // clickedCards=[["a","b"],["a","b"]]
+            //     for (let i=0;i<currentCardDeck.length;i++){
+            //         currentCardDeck[i].style.display="none"}
+                
+
+            
+        }
+
+        // if(e.target.classList.contains("matched")){
+        //     e.target.removeEventListener('click',disappearingAct);
+
+        // }
+
+
+
+
         
         
         
         }
         
+    }
 
 
 
 
-}
 
 
 this.addEventListener('click',disappearingAct);
 
-//////Listen for click
+////Listen for click
 
 
 
-//Matching Logic
+// Matching Logic
 
 
 
