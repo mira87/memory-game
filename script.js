@@ -101,7 +101,7 @@ let board=document.querySelector('.card-area')
                     secondCard.src="img/jcg_bg_red@3x.png";
 
 
-                },1500)
+                },1000)
               
 
             }
