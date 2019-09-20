@@ -292,8 +292,30 @@ h1{
     /* line-height: 23px; */
     text-align: center;
     box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
+    margin-right: 10px;
+    display: block;
+    float: left;
+    width: 50%;
+
+}
+
+.close{
+    height: 60px;
+    border-radius: 4px;
+    background-color: #ffc63e;
+    /* background-size: cover; */
+    font-family: Arial;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    /* line-height: 23px; */
+    text-align: center;
+    box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
     margin: auto;
     display: block;
+    float: left;
+    width: 45%;
+
 }
 
 .timed,.untimed{
@@ -344,18 +366,3 @@ footer img{
 }
 
 
-
-/*****MEDIA QUERIES********/
-
-@media(max-width:360px){
-
-
-    .logo{
-        width: 200px;
-        /* margin-left: 421px; */
-        /* margin-right: 181px; */
-       
-        margin: 0;
-        display: block;
-    }
-    }

@@ -50,9 +50,6 @@ let secondCard;
 let board=document.querySelector('.card-area')
 
 
-
-
-
 /////Listen to click
 
     function disappearingAct(e){
@@ -112,8 +109,16 @@ let board=document.querySelector('.card-area')
         console.log(e.target)
          function playAgain(){
                     win.style.display="none";
+                    location.reload();
+
                 }
-                againBtn.addEventListener('click',playAgain)
+                againBtn.addEventListener('click',playAgain);
+                
+                function close(){
+                    win.style.display="none";
+
+                }
+                closeBtn.addEventListener('click',close)
                 
                 
                 let modalText=document.querySelector('.winner-text');
@@ -149,7 +154,7 @@ board.addEventListener('click',disappearingAct);
 
 ////////////////AGAIN
 
-
+let closeBtn=document.querySelector('.close')
 let againBtn=document.querySelector('.play-again');
 let win=document.querySelector('.modal-again')
 console.log(scoreNum);
