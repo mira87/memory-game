@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,109 +8,123 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>JAPAN MEMORY DUEL</title>
 </head>
+
 <body>
     <button class="night">Night Mode</button>
     <div class="container">
-    <!---------LOGO AREA----------->
-    <header>
-        <div class="logo">
-            <img alt="japan" src="img/japan@3x.png">
-        </div>
-    </header>
-    <main>
-     
-<!-------------LEFT PANEL---------------------->
-        <div class="left-panel">
+        <!---------LOGO AREA----------->
+        <header>
+            <div class="logo">
+                <img alt="japan" src="img/japan@3x.png">
+            </div>
+        </header>
+        <main>
+
+            <!-------------LEFT PANEL---------------------->
+            <div class="left-panel">
                 <div class="score-area">
-                        <h2>SCORE</h2>
-                        <p class="score">
-                           
-                        </p>
-            
+                    <h2>SCORE</h2>
+                    <p class="score">
+
+                    </p>
+
+
+                </div>
+                <div class="timer-area">
+                    <h2>TIMER</h2>
+                    <div class="timer"></div>
+                </div>
+
+                <div class="start-area">
+                    <h2>START</h2>
+                    <div class="start"></div>
+                </div>
 
             </div>
-            <div class="timer-area">
-                <h2>TIMER</h2>
-                <div class="timer"></div>
-            </div>
-           
-            <div class="start-area">
-                <h2>START</h2>
-                <div class="start"></div>
-            </div>
-           
-        </div>
-<!-------------RIGHT PANEL---------------------->
-        <div class="right-panel">
+            <!-------------RIGHT PANEL---------------------->
+            <div class="right-panel">
 
-   <!---------------WELCOME MODAL-------------------->
-   <div class="modal">
-        <div class="modal-text">
-            
-                   <h1>WELCOME TO JAPAN'S MATCHING DUEL</h1> 
+                <!---------------WELCOME MODAL-------------------->
+                <div class="modal">
+                    <div class="modal-text">
+
+                        <h1>WELCOME TO JAPAN'S MATCHING DUEL</h1>
                         <br>
-                    YOUR TASK IS TO FIND A MATCH FOR EVERY PAIR.
-                   ENJOY!
-           
-            <div class="modal-buttons">
-                <button class="begin">LET'S BEGIN</button>
-              
+                        YOUR TASK IS TO FIND A MATCH FOR EVERY PAIR.
+                        ENJOY!
+
+                        <div class="modal-buttons">
+                            <button class="begin">LET'S BEGIN</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!--------------WINNER MODAL---------------------->
+
+                <div class="modal-again">
+                    <div class="modal-text">
+
+                        <h1>YOU WON</h1>
+                        <br>
+                        <p class="winner-text"></p>
+
+                        <div class="modal-buttons">
+                            <button class="play-again">PLAY AGAIN</button>
+                            <button class="close">CLOSE</button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!------------RIGHT PANEL TRUE ELEMENTS------------>
+                <div class="card-area">
+
+
+
+
+                    <img alt="dino" name="dino" data-img="img/jcg_dino_red@3x.png" src="img/jcg_bg_red@3x.png" src
+                        class="dino  card faceCard">
+                    <img alt="geisha" name="geisha" data-img="img/jcg_geisha_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class=" card geisha faceCard">
+                    <img alt="dino" name="dino" data-img="img/jcg_dino_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class=" card dino faceCard">
+                    <img alt="geisha" name="geisha" data-img="img/jcg_geisha_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="geisha faceCard card">
+                    <img alt="post" name="post" data-img="img/jcg_post_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="home" name="home" data-img="img/jcg_home_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="volcano" name="volcano" data-img="img/jcg_volcano_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="sumo" name="sumo" data-img="img/jcg_sumo_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="post" name="post" data-img="img/jcg_post_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="home" name="home" data-img="img/jcg_home_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="volcano" name="volcano" data-img="img/jcg_volcano_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                    <img alt="name" name="sumo" data-img="img/jcg_sumo_red@3x.png" src="img/jcg_bg_red@3x.png"
+                        class="card faceCard">
+                </div>
+                <!---------------END-->
             </div>
-        </div>
+        </main>
+        <footer>
+            <img alt="life" src="img/Life@3x.png">
+        </footer>
     </div>
 
-
-
-
-    <!--------------WINNER MODAL---------------------->
-
-    <div class="modal-again">
-            <div class="modal-text">
-                
-                       <h1>YOU WON</h1> 
-                            <br>
-                        <p class="winner-text"></p>
-               
-                <div class="modal-buttons">
-                    <button class="play-again">PLAY AGAIN</button>
-                    <button class="close">CLOSE</button>
-                    
-                    
-                </div>
-            </div>
-        </div>
-
-
-
-
-    <!------------RIGHT PANEL TRUE ELEMENTS------------>
-        <div class="card-area">
-
-             
-
-
-                <img alt="dino" name="dino" data-img="img/jcg_dino_red@3x.png"  src="img/jcg_bg_red@3x.png" src class="dino  card faceCard">
-                <img alt="geisha" name="geisha" data-img="img/jcg_geisha_red@3x.png" src="img/jcg_bg_red@3x.png" class=" card geisha faceCard">
-                <img alt="dino" name="dino" data-img="img/jcg_dino_red@3x.png" src="img/jcg_bg_red@3x.png" class=" card dino faceCard">
-                <img alt="geisha" name="geisha" data-img="img/jcg_geisha_red@3x.png" src="img/jcg_bg_red@3x.png" class="geisha faceCard card">
-                <img alt="post" name="post" data-img="img/jcg_post_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard">
-                <img alt="home" name="home" data-img="img/jcg_home_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard">
-                <img alt="volcano" name="volcano" data-img="img/jcg_volcano_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard">
-                <img alt="sumo" name="sumo" data-img="img/jcg_sumo_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard"> 
-                <img alt="post" name="post" data-img="img/jcg_post_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard">
-                <img alt="home" name="home" data-img="img/jcg_home_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard">
-                <img alt="volcano" name="volcano" data-img="img/jcg_volcano_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard">
-                <img alt="name" name="sumo" data-img="img/jcg_sumo_red@3x.png" src="img/jcg_bg_red@3x.png" class="card faceCard"> 
-        </div>
-    <!---------------END-->
-        </div>
-    </main>
-    <footer>
-        <img alt="life" src="img/Life@3x.png">
-    </footer>
-</div>
-  
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
